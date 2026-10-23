@@ -105,6 +105,14 @@ function App() {
 
           <div className="footer-bottom">
             <p>Sacred Heart College of Lucena City, Inc.</p>
+
+            <p>powered by
+            <img
+              src="/images/icet-logo.png" width="100" align="center"
+              alt="Sacred Heart College Logo"
+            />
+            </p>
+
             <p>© {new Date().getFullYear()} All Rights Reserved.</p>
           </div>
         </div>
