@@ -6,7 +6,7 @@
 
 /* GLOBAL RESET */
 :root {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -538,5 +538,127 @@ a:focus-visible {
   .footer-bottom {
     flex-direction: column;
     gap: 8px;
+  }
+}
+
+
+
+/* ==========================================
+   SHC - ENTRANCE ANIMATIONS
+========================================== */
+
+/* Smooth fade-in and slide-up */
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* School branding */
+.brand {
+  animation: slideUpFade 0.8s ease-out both;
+}
+
+/* Website service advisory */
+.hero-content .status {
+  animation: slideUpFade 0.8s ease-out 0.15s both;
+}
+
+/* Main heading */
+.hero-content h1 {
+  animation: slideUpFade 0.9s ease-out 0.3s both;
+}
+
+/* First description */
+.hero-content .description:nth-of-type(2) {
+  animation: slideUpFade 0.9s ease-out 0.45s both;
+}
+
+/* Second description */
+.hero-content .description:nth-of-type(3) {
+  animation: slideUpFade 0.9s ease-out 0.55s both;
+}
+
+/* Action buttons */
+.hero-content .actions {
+  animation: slideUpFade 0.9s ease-out 0.7s both;
+}
+
+/* Footer animation */
+.footer-inner {
+  animation: slideUpFade 0.9s ease-out 0.85s both;
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .brand,
+  .hero-content .status,
+  .hero-content h1,
+  .hero-content .description,
+  .hero-content .actions,
+  .footer-inner {
+    animation: none;
+  }
+}
+
+
+
+/* ==========================================
+   SHC - MODERN TYPOGRAPHY
+========================================== */
+
+/* Apply Inter throughout the website */
+body {
+  font-family: "Inter", Arial, sans-serif;
+}
+
+/* School name */
+.brand span {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+
+/* Main heading */
+.hero-content h1 {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -2px;
+}
+
+/* Paragraphs */
+.description {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+}
+
+/* Action buttons */
+.btn {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 600;
+}
+
+/* Footer */
+.footer {
+  font-family: "Inter", Arial, sans-serif;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .brand span {
+    font-size: 15px;
+  }
+
+  .hero-content h1 {
+    letter-spacing: -1.2px;
   }
 }
