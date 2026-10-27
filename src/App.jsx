@@ -47,12 +47,17 @@ function App() {
               Updates on Facebook ↗
             </a>
 
-            <a
-              href="http://222.127.108.202/studentportal/"
-              className="btn btn-outline"
-            >
-              Student Portal ↓
-            </a>
+            <div className="student-portal-action">
+              <a
+                href="http://222.127.108.202/studentportal/"
+                className="btn btn-outline student-portal-button"
+              >
+                <span>Student Portal ↓</span>
+                <span className="payment-receipt-note">
+                  You can also attached you online payment receipt here
+                </span>
+              </a>
+            </div>
 
             <a
               href="http://222.127.108.202/employeeportal/"
